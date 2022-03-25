@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="5.3160" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-12-14T12:29:52" tests="0" file="cypress/integration/training/Datatable.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="datadriven" timestamp="2021-12-14T12:29:52" tests="3" time="5.3160" failures="0">
+    <testcase name="datadriven testdata" time="4.7240" classname="testdata">
+    </testcase>
+    <testcase name="datadriven testdata" time="0.3170" classname="testdata">
+    </testcase>
+    <testcase name="datadriven testdata" time="0.2750" classname="testdata">
+    </testcase>
+  </testsuite>
+</testsuites>

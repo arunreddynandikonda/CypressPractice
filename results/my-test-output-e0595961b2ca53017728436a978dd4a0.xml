@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="14.5140" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-12-14T12:29:30" tests="0" file="cypress/integration/training/AirAsia.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="AirAsia" timestamp="2021-12-14T12:29:30" tests="1" time="14.5140" failures="0">
+    <testcase name="AirAsia ticketBooking" time="14.5140" classname="ticketBooking">
+    </testcase>
+  </testsuite>
+</testsuites>

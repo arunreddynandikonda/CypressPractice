@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="13.0560" tests="6" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-12-14T12:30:04" tests="0" file="cypress/integration/training/Heroku.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Heroku" timestamp="2021-12-14T12:30:04" tests="6" time="13.0560" failures="0">
+    <testcase name="Heroku abTesting" time="5.9240" classname="abTesting">
+    </testcase>
+    <testcase name="Heroku checkboxes" time="1.5560" classname="checkboxes">
+    </testcase>
+    <testcase name="Heroku dropdown" time="1.2380" classname="dropdown">
+    </testcase>
+    <testcase name="Heroku contextMenu" time="1.1900" classname="contextMenu">
+    </testcase>
+    <testcase name="Heroku multipleWindows" time="1.8260" classname="multipleWindows">
+    </testcase>
+    <testcase name="Heroku alerts" time="1.3220" classname="alerts">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,200 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-12-14T12:25:56.570Z",
+    "end": "2021-12-14T12:26:15.063Z",
+    "duration": 18493,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6ed4c941-7567-4501-93c6-d75459eb0bf3",
+      "title": "",
+      "fullFile": "cypress/integration/training/Heroku.js",
+      "file": "cypress/integration/training/Heroku.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a1184104-0f28-4269-bad2-9c1a6fa9ac66",
+          "title": "Heroku",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "abTesting",
+              "fullTitle": "Heroku abTesting",
+              "timedOut": null,
+              "duration": 7507,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('a[href=\"/abtest\"]').click();\ncy.get('h3').should('include.text', 'A/B Test');",
+              "err": {},
+              "uuid": "7de9d183-bfdb-49f7-9fde-89e2a3a3100b",
+              "parentUUID": "a1184104-0f28-4269-bad2-9c1a6fa9ac66",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "checkboxes",
+              "fullTitle": "Heroku checkboxes",
+              "timedOut": null,
+              "duration": 1209,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('a[href=\"/checkboxes\"]').click();\ncy.get('form input:nth-child(1)').check().should('be.checked');",
+              "err": {},
+              "uuid": "863fe429-7d44-45bc-9341-f08cf1bf793a",
+              "parentUUID": "a1184104-0f28-4269-bad2-9c1a6fa9ac66",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "dropdown",
+              "fullTitle": "Heroku dropdown",
+              "timedOut": null,
+              "duration": 1233,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('a[href=\"/dropdown\"]').click();\ncy.get('select').select('2').should('have.value', '2');",
+              "err": {},
+              "uuid": "de257989-7b58-4246-adb9-c08685799517",
+              "parentUUID": "a1184104-0f28-4269-bad2-9c1a6fa9ac66",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "contextMenu",
+              "fullTitle": "Heroku contextMenu",
+              "timedOut": null,
+              "duration": 1925,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('a[href=\"/context_menu\"]').click();\ncy.get('#hot-spot').rightclick();\ncy.on('window:alert', function (string) {\n  expect(string).to.equal('You selected a context menu');\n});",
+              "err": {},
+              "uuid": "764a4efc-48f2-440c-a4a4-43e956b399d2",
+              "parentUUID": "a1184104-0f28-4269-bad2-9c1a6fa9ac66",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "multipleWindows",
+              "fullTitle": "Heroku multipleWindows",
+              "timedOut": null,
+              "duration": 2020,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('a[href=\"/windows\"]').click();\ncy.get('a[href=\"/windows/new\"]').invoke('removeAttr', 'target').click();\ncy.get('h3').should('include.text', 'New Window');",
+              "err": {},
+              "uuid": "393e1ecf-6242-4820-bbd3-b591ddc69454",
+              "parentUUID": "a1184104-0f28-4269-bad2-9c1a6fa9ac66",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "alerts",
+              "fullTitle": "Heroku alerts",
+              "timedOut": null,
+              "duration": 1093,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('a[href=\"/javascript_alerts\"]').click();\ncy.get('button[onclick=\"jsAlert()\"]').click;\ncy.get('button[onclick=\"jsConfirm()\"]').click;\ncy.on('window:alert', function (string) {\n  expect(string).to.equal('I am a JS Alert');\n});\ncy.on('window:confirm', function (str) {\n  expect(str).to.equal('I am a JS Confirm');\n});",
+              "err": {},
+              "uuid": "c9f737fe-39be-499c-924b-2decdf4edce3",
+              "parentUUID": "a1184104-0f28-4269-bad2-9c1a6fa9ac66",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7de9d183-bfdb-49f7-9fde-89e2a3a3100b",
+            "863fe429-7d44-45bc-9341-f08cf1bf793a",
+            "de257989-7b58-4246-adb9-c08685799517",
+            "764a4efc-48f2-440c-a4a4-43e956b399d2",
+            "393e1ecf-6242-4820-bbd3-b591ddc69454",
+            "c9f737fe-39be-499c-924b-2decdf4edce3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 14987,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

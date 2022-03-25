@@ -1,0 +1,12 @@
+{
+  "env": 
+  {
+    "url" : "https://www.amazon.in/"
+  },
+  "projectId": "ts322n",
+  "reporter": "junit",
+  "reporterOptions": {
+    	"mochaFile": "results/my-test-output-[hash].xml"
+  }
+  
+}
